@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUMORA Salon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            LUMORA
+            <span>BEAUTY • WELLNESS • STYLE</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#social">Social Timeline</a>
+            <a href="#services">Services</a>
+            <a href="#offers">Offers</a>
+            <a href="#team">Our Team</a>
+            <a href="#locations">Locations</a>
+            <a href="#contact">Contact</a>
+
+            <button onclick="openBooking()">
+                Book Now
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                YOUR STYLE. YOUR BEAUTY. YOUR STUDIO.
+            </p>
+
+            <h1>
+                Beauty that feels
+                <span>personal.</span>
+            </h1>
+
+            <p>
+                Hair, skin, makeup and grooming services
+                created by professionals who understand your style.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button onclick="openBooking()">
+                    Book Appointment
+                </button>
+
+                <a href="#locations">
+                    Find Nearest Salon
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80"
+                alt="Salon">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CITY ================= -->
+
+    <section class="city-bar">
+
+        <div>
+            <small>VISIT US IN</small>
+
+            <h2 id="cityName">
+                Hyderabad
+            </h2>
+        </div>
+
+
+        <select id="citySelect" onchange="changeCity()">
+
+            <option value="Hyderabad">
+                Hyderabad
+            </option>
+
+            <option value="Kakinada">
+                Kakinada
+            </option>
+
+            <option value="Vijayawada">
+                Vijayawada
+            </option>
+
+            <option value="Visakhapatnam">
+                Visakhapatnam
+            </option>
+
+            <option value="Rajahmundry">
+                Rajahmundry
+            </option>
+
+        </select>
+
+
+        <p id="cityAddress">
+            Jubilee Hills • Road No. 36 • 8:00 AM – 9:00 PM
+        </p>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services">
+
+        <div class="section-title">
+
+            <p>SERVICES</p>
+
+            <h2>
+                Everything you need
+                for your best look.
+            </h2>
+
+        </div>
+
+
+        <div class="service-container">
+
+
+            <div class="service-card">
+
+                <span>01</span>
+
+                <h3>
+                    Hair Studio
+                </h3>
+
+                <p>
+                    Haircuts, styling, colouring,
+                    keratin and hair spa.
+                </p>
+
+                <strong>
+                    From ₹399
+                </strong>
+
+                <button onclick="openBooking('Hair Studio')">
+                    Book Service →
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <span>02</span>
+
+                <h3>
+                    Skin & Glow
+                </h3>
+
+                <p>
+                    Facials, clean-ups and
+                    advanced skincare treatments.
+                </p>
+
+                <strong>
+                    From ₹699
+                </strong>
+
+                <button onclick="openBooking('Skin & Glow')">
+                    Book Service →
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <span>03</span>
+
+                <h3>
+                    Bridal & Makeup
+                </h3>
+
+                <p>
+                    Bridal, engagement and
+                    party makeup.
+                </p>
+
+                <strong>
+                    From ₹2499
+                </strong>
+
+                <button onclick="openBooking('Bridal & Makeup')">
+                    Book Service →
+                </button>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <span>04</span>
+
+                <h3>
+                    Men's Grooming
+                </h3>
+
+                <p>
+                    Haircuts, beard styling,
+                    facials and grooming.
+                </p>
+
+                <strong>
+                    From ₹299
+                </strong>
+
+                <button onclick="openBooking('Men Grooming')">
+                    Book Service →
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFFERS ================= -->
+
+    <section id="offers" class="offers">
+
+        <div class="section-title">
+
+            <p>DAILY OFFERS</p>
+
+            <h2>
+                Today's beauty offers
+            </h2>
+
+        </div>
+
+
+        <div class="offer-container">
+
+            <div class="offer-card">
+
+                <small>
+                    TODAY • 20% OFF
+                </small>
+
+                <h3>
+                    Glow Day
+                </h3>
+
+                <p>
+                    Facial + clean-up +
+                    head massage.
+                </p>
+
+                <button onclick="openBooking('Skin & Glow')">
+                    Claim Offer
+                </button>
+
+            </div>
+
+
+            <div class="offer-card">
+
+                <small>
+                    NEW CUSTOMER
+                </small>
+
+                <h3>
+                    First Visit
+                </h3>
+
+                <p>
+                    Get ₹300 OFF on your
+                    first service above ₹1500.
+                </p>
+
+                <button onclick="openBooking()">
+                    Claim Offer
+                </button>
+
+            </div>
+
+
+            <div class="offer-card">
+
+                <small>
+                    WEEKEND
+                </small>
+
+                <h3>
+                    Bride To Be
+                </h3>
+
+                <p>
+                    Complimentary skin
+                    consultation.
+                </p>
+
+                <button onclick="openBooking('Bridal & Makeup')">
+                    Claim Offer
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SOCIAL TIMELINE ================= -->
+
+    <section id="social">
+
+        <div class="section-title">
+
+            <p>SOCIAL TIMELINE</p>
+
+            <h2>
+                What's happening
+                at LUMORA
+            </h2>
+
+        </div>
+
+
+        <div class="social-container">
+
+
+            <div class="social-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80">
+
+                <small>
+                    REEL • TODAY
+                </small>
+
+                <h3>
+                    Hair transformation
+                </h3>
+
+                <p>
+                    A beautiful new look
+                    created by our stylist.
+                </p>
+
+            </div>
+
+
+            <div class="social-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80">
+
+                <small>
+                    BEAUTY TIP
+                </small>
+
+                <h3>
+                    Skin care routine
+                </h3>
+
+                <p>
+                    Simple tips for maintaining
+                    healthy looking skin.
+                </p>
+
+            </div>
+
+
+            <div class="social-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80">
+
+                <small>
+                    BEHIND THE CHAIR
+                </small>
+
+                <h3>
+                    Meet our team
+                </h3>
+
+                <p>
+                    Discover the professionals
+                    behind our transformations.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TEAM ================= -->
+
+    <section id="team" class="team">
+
+        <div class="section-title">
+
+            <p>OUR TEAM</p>
+
+            <h2>
+                Meet the people
+                behind your look.
+            </h2>
+
+        </div>
+
+
+        <div class="team-container">
+
+
+            <div class="team-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=80">
+
+                <h3>
+                    Ananya Rao
+                </h3>
+
+                <p>
+                    Creative Director
+                </p>
+
+                <small>
+                    Hair • Colour • Styling
+                </small>
+
+            </div>
+
+
+            <div class="team-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=700&q=80">
+
+                <h3>
+                    Riya Sharma
+                </h3>
+
+                <p>
+                    Senior Skin Artist
+                </p>
+
+                <small>
+                    Facials • Skin Care
+                </small>
+
+            </div>
+
+
+            <div class="team-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80">
+
+                <h3>
+                    Arjun Varma
+                </h3>
+
+                <p>
+                    Grooming Specialist
+                </p>
+
+                <small>
+                    Hair • Beard
+                </small>
+
+            </div>
+
+
+            <div class="team-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&q=80">
+
+                <h3>
+                    Meera Kapoor
+                </h3>
+
+                <p>
+                    Bridal Makeup Artist
+                </p>
+
+                <small>
+                    Bridal • Occasion
+                </small>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOCATIONS ================= -->
+
+    <section id="locations">
+
+        <div class="section-title">
+
+            <p>OUR LOCATIONS</p>
+
+            <h2>
+                Find your nearest LUMORA
+            </h2>
+
+        </div>
+
+
+        <div class="location-container">
+
+
+            <div class="location-card">
+
+                <h3>
+                    Hyderabad
+                </h3>
+
+                <p>
+                    📍 Jubilee Hills,
+                    Road No. 36
+                </p>
+
+                <p>
+                    🕐 8:00 AM – 9:00 PM
+                </p>
+
+                <button onclick="selectLocation('Hyderabad')">
+                    Select Location
+                </button>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <h3>
+                    Kakinada
+                </h3>
+
+                <p>
+                    📍 Main Road,
+                    Suryaraopeta
+                </p>
+
+                <p>
+                    🕐 8:00 AM – 8:00 PM
+                </p>
+
+                <button onclick="selectLocation('Kakinada')">
+                    Select Location
+                </button>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <h3>
+                    Vijayawada
+                </h3>
+
+                <p>
+                    📍 Benz Circle,
+                    MG Road
+                </p>
+
+                <p>
+                    🕐 8:00 AM – 9:00 PM
+                </p>
+
+                <button onclick="selectLocation('Vijayawada')">
+                    Select Location
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div>
+
+            <p>
+                CONTACT US
+            </p>
+
+            <h2>
+                Let's make your
+                next visit easy.
+            </h2>
+
+            <p>
+                Have a question?
+                Want to book an appointment?
+                Contact our team.
+            </p>
+
+            <h4>
+                📞 +91 8309657688
+            </h4>
+
+            <h4>
+                ✉  contact@varmarealty.in
+            </h4>
+
+
+        </div>
+
+
+        <form onsubmit="submitContact(event)">
+
+            <input
+                type="text"
+                placeholder="Your Name *"
+                required>
+
+            <input
+                type="tel"
+                placeholder="Mobile Number *"
+                required>
+
+            <input
+                type="email"
+                placeholder="Email Address *"
+                required>
+
+            <textarea
+                placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Send Enquiry
+            </button>
+
+            <p id="contactMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+            LUMORA
+        </h2>
+
+        <p>
+            BEAUTY • WELLNESS • STYLE
+        </p>
+
+        <p>
+            © 2026 LUMORA Studio
+        </p>
+
+    </footer>
+
+
+    <!-- ================= BOOKING POPUP ================= -->
+
+    <div id="bookingModal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close"
+                onclick="closeBooking()">
+                ×
+            </button>
+
+            <h2>
+                Book Appointment
+            </h2>
+
+            <form onsubmit="submitBooking(event)">
+
+                <input
+                    id="bookingName"
+                    type="text"
+                    placeholder="Full Name *"
+                    required>
+
+                <input
+                    type="tel"
+                    placeholder="Mobile Number *"
+                    required>
+
+                <select id="bookingCity">
+
+                    <option>
+                        Hyderabad
+                    </option>
+
+                    <option>
+                        Kakinada
+                    </option>
+
+                    <option>
+                        Vijayawada
+                    </option>
+
+                    <option>
+                        Visakhapatnam
+                    </option>
+
+                </select>
+
+                <select id="bookingService">
+
+                    <option>
+                        Hair Studio
+                    </option>
+
+                    <option>
+                        Skin & Glow
+                    </option>
+
+                    <option>
+                        Bridal & Makeup
+                    </option>
+
+                    <option>
+                        Men's Grooming
+                    </option>
+
+                </select>
+
+                <input
+                    type="date"
+                    required>
+
+                <input
+                    type="time"
+                    required>
+
+                <textarea
+                    placeholder="Any special request?">
+                </textarea>
+
+                <button type="submit">
+                    Confirm Appointment
+                </button>
+
+                <p id="bookingMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
