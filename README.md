@@ -1,5 +1,6 @@
 # LUMORA-Salon
-1. Project Overview
+
+## 🚀 Project Overview
 
 LUMORA Salon is a responsive, interactive salon and beauty-service website designed to provide users with information about salon services, offers, team members, locations, and appointment booking.
 
@@ -7,7 +8,7 @@ The website includes a modern landing page with sections for Hair Studio, Skin &
 
 The project also includes interactive appointment booking and contact forms using JavaScript. Users can select a service, city, date, and time when submitting an appointment request.
 
-2. Learning Objectives
+## 🎯 Learning Objectives
 
 The main learning objectives of this project are:
 
@@ -21,6 +22,8 @@ Understand responsive web design using CSS media queries.
 Improve UI/UX design skills through typography, layouts, spacing, buttons, cards, and navigation.
 Learn how to organize a front-end project into separate HTML, CSS, and JavaScript files.
 
+## 🛠️ Tools & Technologies Used
+
 | Technology                      | Purpose                                            |
 | ------------------------------- | -------------------------------------------------- |
 | **HTML5**                       | Website structure and content                      |
@@ -33,11 +36,11 @@ Learn how to organize a front-end project into separate HTML, CSS, and JavaScrip
 | **Git & GitHub**                | Version control and project hosting                |
 | **Unsplash**                    | External images used in the website                |
 
-4. Methodology
+## 🔬 Methodology
 
 The project was developed using a front-end web development methodology consisting of the following stages:
 
-Step 1 — Requirement Analysis
+## Step 1 — Requirement Analysis
 
 Identify the main requirements of a salon website, including:
 
@@ -47,7 +50,8 @@ Locations
 Team information
 Contact details
 Appointment booking
-Step 2 — Website Structure
+
+## Step 2 — Website Structure
 
 The website was structured using semantic HTML sections such as:
 
@@ -65,7 +69,7 @@ Booking modal
 
 The navigation provides access to these major sections and includes a Book Now action.
 
-Step 3 — UI Design
+## Step 3 — UI Design
 
 CSS was used to create a modern salon-oriented visual design with:
 
@@ -80,7 +84,7 @@ Responsive layouts
 
 For example, service cards have hover effects that move the card upward and add a shadow.
 
-Step 4 — Interactivity
+## Step 4 — Interactivity
 
 JavaScript was implemented to make the website interactive.
 
@@ -88,11 +92,11 @@ For example, selecting a city dynamically updates the displayed city and address
 
 The booking modal can also automatically select a service when the user clicks Book Service.
 
-Step 5 — Responsive Design
+## Step 5 — Responsive Design
 
 Media queries were added to adapt the website for different screen sizes. On smaller screens, multi-column layouts become single-column or two-column layouts.
 
-Step 6 — Testing
+## Step 6 — Testing
 
 The website can be tested in a browser for:
 
@@ -103,7 +107,8 @@ Contact form
 Responsive layout
 Mobile compatibility
 Modal opening/closing
-5. Dataset Source
+
+## 5. Dataset Source
 
 Dataset: Not Applicable (N/A)
 
